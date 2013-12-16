@@ -1,13 +1,13 @@
 Veewee::Session.declare({
   :cpu_count => '1',
-  :memory_size=> '4096',
-  :disk_size => '40960',
+  :memory_size=> '480',
+  :disk_size => '10140',
   :disk_format => 'VDI',
-  :hostiocache => 'on',
-  :os_type_id => 'RedHat_64',
-  :iso_file => "CentOS-6.4-x86_64-minimal.iso",
-  :iso_src => "http://www.mirrorservice.org/sites/mirror.centos.org/6.4/isos/x86_64/CentOS-6.4-x86_64-minimal.iso",
-  :iso_md5 => "4a5fa01c81cc300f4729136e28ebe600",
+  :hostiocache => 'off',
+  :os_type_id => 'RedHat6_64',
+  :iso_file => "CentOS-6.5-x86_64-minimal.iso",
+  :iso_src => "http://yum.singlehop.com/CentOS/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso",
+  :iso_md5 => "0d9dc37b5dd4befa1c440d2174e88a87",
   :iso_download_timeout => 1000,
   :boot_wait => "10",
   :boot_cmd_sequence => [
@@ -29,6 +29,7 @@ Veewee::Session.declare({
     "chef.sh",
     "vagrant.sh",
     "virtualbox.sh",
+    #"vmfusion.sh",
     "cleanup.sh",
     "zerodisk.sh"
   ],
