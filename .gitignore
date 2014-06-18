@@ -3,4 +3,5 @@ iso/*iso
 boxes/*box
 *box
 Gemfile.lock
+ignore
 
