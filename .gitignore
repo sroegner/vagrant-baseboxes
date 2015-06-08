@@ -1,7 +1,6 @@
-.bundle
-iso/*iso
-boxes/*box
+*iso
 *box
-Gemfile.lock
-ignore
-
+*box
+artifacts
+packer_bin
+packer_cache
